@@ -51,9 +51,6 @@ a{
     margin: 0 8px;
 }
 
-.actions svg:hover{
-    cursor: pointer;
-}
 
 .actions svg.active{
     transform: scale(1.4);
@@ -65,7 +62,6 @@ a{
     top: 19px;
     left: 196px;
     z-index: 10;
-    cursor: pointer;
 }
 .colors > li{
     border-radius: 50%;
@@ -76,7 +72,6 @@ a{
     position: fixed;
     bottom: 0;
     left: 15px;
-    cursor: pointer;
 }
 .backgroundColors > li {
     border: 1px solid #666;
