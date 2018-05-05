@@ -5,7 +5,6 @@ var pen2 = document.getElementById('pen2');
 var eraser = document.getElementById('eraser');
 var clear =document.getElementById('clear');
 var download = document.querySelector(".download");
-console.log(download)
 
 var black = document.getElementById('black');
 var blue = document.getElementById('blue');
@@ -14,8 +13,6 @@ var green = document.getElementById('green');
 
 var backWhite = document.getElementById('backWhite');
 var backWhiteTest = 0;
-// var img = canvas.toDataURL("image/png");
-// document.write('<img src="'+img+'"/>');
 
 var lineWidth = 5;
 var r=2;
@@ -38,15 +35,12 @@ listenToUser(canvas);
 
 //下面是工具函数
 
-
-
 function drawLine(x1,y1,x2,y2) {
     context.beginPath();
     context.moveTo(x1-0,y1+29);
     context.lineWidth = lineWidth;
     context.lineTo(x2-0,y2+29);
     context.stroke();
-    context.closePath();
 }
 
 function drawCircle(x,y,r) {
@@ -61,14 +55,12 @@ function autoSetCanvasSize(canvas) {
         setCanvasSize()
     };
 
-
     function setCanvasSize() {
         var pageWidth = document.documentElement.clientWidth;
         var pageHeight = document.documentElement.clientHeight;
         canvas.width = pageWidth;
         canvas.height = pageHeight;
     }
-
 }
 
 
@@ -249,7 +241,5 @@ function listenToUser(canvas) {
             using = false;
         };
     }
-
-
 }
 

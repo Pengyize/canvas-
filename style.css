@@ -32,7 +32,7 @@ a{
 #canvas{
     background: white;
     display: block;
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
 }
@@ -42,7 +42,6 @@ a{
     top: 2px;
     left: 2px;
     padding: 15px 20px 20px 10px;
-    z-index: 10;
 }
 .actions svg{
     width: 2em;
@@ -50,18 +49,14 @@ a{
     transition: all 0.3s;
     margin: 0 8px;
 }
-
-
 .actions svg.active{
     transform: scale(1.4);
 }
-
 
 .colors{
     position: fixed;
     top: 19px;
     left: 196px;
-    z-index: 10;
 }
 .colors > li{
     border-radius: 50%;
